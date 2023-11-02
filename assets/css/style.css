@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Libre+Baskerville&display=swap");
+
+:root {
+  --very-pale-oreange: #fff8ea;
+  --dull-reddish-brown: #9e7676;
+  --medium-taupe: #815b5b;
+  --dark-brown: #594545;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background: var(--very-pale-oreange);
+  color: var(--dark-brown);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.index p{
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 2;
+}
+
+.navbar {
+  --bs-navbar-color: var(--dull-reddish-brown);
+  --bs-navbar-brand-color: var(--medium-taupe);
+  --bs-navbar-brand-hover-color: var(--dark-brown);
+  --bs-navbar-active-color: var(--dark-brown);
+  --bs-navbar-hover-color: var(--medium-taupe);
+}
+
+.navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: center;
+  border: 1px solid var(--medium-taupe);
+  color: var(--medium-taupe);
+}
+
+.dropdown-item:hover {
+  background: var(--dull-reddish-brown);
+  border: 1px solid var(--dull-reddish-brown);
+  color: var(--very-pale-oreange);
+}
+
+.dropdown-item.active {
+  background: var(--medium-taupe);
+}
+
+.jumbotron {
+  background: url("../image/bg-coffe-shop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: var(--very-pale-oreange);
+}
+
+.breadcrumb {
+  background-image: url("../image/Hexagon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--very-pale-oreange);
+  font-family: "Libre Baskerville", serif;
+}
+
+.breadcrumb h1,
+.jumbotron {
+  text-shadow: 0 0 5px var(--dark-brown);
+}
+
+.card {
+  background: var(--very-pale-oreange);
+  color: var(--dark-brown);
+  box-shadow: 0 0 3px var(--dark-brown);
+}
+
+.table {
+  --bs-table-bg: var(--dull-reddish-brown);
+  --bs-table-color: var(--very-pale-oreange);
+  --bs-table-border-color: var(--very-pale-oreange);
+}
+
+.table th {
+  --bs-table-bg: var(--medium-taupe);
+}
+
+.form-control {
+  --bs-input-color: var(--medium-taupe);
+  --bs-input-bg: var(--medium-taupe);
+  --bs-input-border-color: var(--medium-taupe);
+  --bs-input-placeholder-color: var(--medium-taupe);
+  --bs-input-plaintext-color: var(--medium-taupe);
+  --bs-form-file-button-bg: var(--medium-taupe);
+}
+
+.form-control:focus {
+  --bs-input-focus-border-color: var(--medium-taupe);
+}
+
+label {
+  color: var(--dark-brown);
+}
+
+input[type="submit"] {
+  background: var(--medium-taupe);
+  color: var(--very-pale-oreange);
+  border: 1px solid var(--medium-taupe);
+}
+
+input[type="submit"]:hover {
+  background: var(--dull-reddish-brown);
+  color: var(--very-pale-oreange);
+  border: 1px solid var(--dull-reddish-brown);
+}
+
+footer {
+  text-align: center;
+}
+
+address,
+.bg-footer p {
+  color: var(--very-pale-oreange);
+  padding: 10px;
+  margin: 0;
+}
+
+address {
+  background: var(--dull-reddish-brown);
+}
+
+.bg-footer {
+  background: var(--medium-taupe);
+}
