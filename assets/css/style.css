@@ -26,10 +26,14 @@ main {
   flex: 1;
 }
 
-.index p{
+.index p, .card-text{
   text-align: justify;
   text-indent: 50px;
   line-height: 2;
+}
+
+h5{
+  font-weight: bold;
 }
 
 .navbar {
